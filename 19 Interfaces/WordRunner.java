@@ -4,6 +4,7 @@
 //comparable example one
 
 import static java.lang.System.*;
+<<<<<<< HEAD
 import java.util.*;
 
 public class WordRunner
@@ -42,5 +43,23 @@ public class WordRunner
   
   Collections.sort(mains);
   out.print(mains);
+=======
+import static java.util.ArrayList;
+import static java.util.Collections;
+
+public class WordRunner
+{
+ public static void main ( String[] args )
+ {
+  Word x = new Word("cat");
+  Word y = new Word("catcat");
+  System.out.println( x.compareTo(y) );
+  
+  //make a list of Word
+  List<Word> list = new ArrayList<Word>();
+  
+  //call Collections.sort() and sort the list
+  //print the list
+>>>>>>> upstream/master
   }
 }
