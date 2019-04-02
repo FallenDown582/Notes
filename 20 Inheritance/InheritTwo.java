@@ -5,41 +5,6 @@
 
 import static java.lang.System.*;
 
-class Monster
-{
-	private String myName;
-
-	public Monster()
-	{
-		myName = "Monster";
-	}
-
-	public Monster( String name )
-	{
-		myName = name;
-	}
-
-	public String toString()
-	{
-		return "Monster name :: " + myName + "\n";
-	}
-}
-
-class Witch extends Monster
-{	
-	//how does Witch work if it has no code?
-
-	
-	
-}
-
-//make a new type of Monster - Sasquatch 
-
-
-
-
-
-
 public class InheritTwo
 {
   public static void main ( String[] args )
@@ -51,7 +16,48 @@ public class InheritTwo
      out.println(witch);
      
      //instantiate Sasquatch
-     
+     Sasquatch bob = new Sasquatch();
+     bob.yodel();
      
   }
 }
+class Monster
+{
+ private String myName;
+
+ public Monster()
+ {
+  myName = "Monster";
+ }
+
+ public Monster( String name )
+ {
+  myName = name;
+ }
+
+ public String toString()
+ {
+  return "Monster name :: " + myName + "\n";
+ }
+}
+
+class Witch extends Monster
+{ 
+ //how does Witch work if it has no code?
+
+ 
+ 
+}
+
+//make a new type of Monster - Sasquatch 
+class Sasquatch extends Monster{
+  public void yodel(){
+    System.out.println("Yodelodelodelooooooo");
+  }
+}
+
+
+
+
+
+
