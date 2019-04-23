@@ -25,6 +25,30 @@ public class InheritOne
 }
 
 
+public class InheritOne
+{
+  public static void main ( String[] args )
+  {
+  //test code in the main method
+  A one = new A();
+    B two = new B();
+
+  out.println(one);
+  one.setX(11);
+  out.println(one.getX());
+
+  
+  out.println(two);    
+  two.setX(24);
+  out.println(two.getX()); 
+  
+  A three = new A();
+  three = one;
+  System.out.println( one.equals(three) );
+  
+  }
+}
+
 class A
 {
    private int x;

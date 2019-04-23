@@ -54,14 +54,25 @@ class Witch extends Monster
 
  public Witch( String name, int age )
  {
+<<<<<<< HEAD
   super(name, age);
+=======
+  //what code should be here
+    super(name, age);
+>>>>>>> upstream/master
  }
 
  public void showPrivate()
  {
   out.println("\n\nshowPrivate() - accessing myName");
+<<<<<<< HEAD
   //uncomment the following line
   //System.out.println(myName);   //name has private access in Monster
+=======
+    
+  //uncomment the following line
+  System.out.println(myName);   //name has private access in Monster
+>>>>>>> upstream/master
  }
 
  public void showProtected()

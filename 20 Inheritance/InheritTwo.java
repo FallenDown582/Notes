@@ -16,11 +16,22 @@ public class InheritTwo
      out.println(witch);
      
      //instantiate Sasquatch
+<<<<<<< HEAD
      Sasquatch bob = new Sasquatch();
      bob.yodel();
      
   }
 }
+=======
+     Sasquatch billy = new Sasquatch();
+     System.out.println(billy.getHasFluffy());
+     System.out.println(billy);
+     
+     
+  }
+}
+
+>>>>>>> upstream/master
 class Monster
 {
  private String myName;
@@ -50,14 +61,31 @@ class Witch extends Monster
 }
 
 //make a new type of Monster - Sasquatch 
+<<<<<<< HEAD
 class Sasquatch extends Monster{
   public void yodel(){
     System.out.println("Yodelodelodelooooooo");
   }
+=======
+
+class Sasquatch extends Monster{
+     private boolean hasFluffy;
+     
+     public Sasquatch(){
+          hasFluffy = true;
+     }
+     
+     public boolean getHasFluffy(){
+          return hasFluffy;
+     }
+>>>>>>> upstream/master
 }
 
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> upstream/master

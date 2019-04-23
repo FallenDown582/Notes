@@ -16,7 +16,10 @@ public class Final
      Monster witch = new Witch("Harriet");
      out.println(witch);
      witch.overRide();
+<<<<<<< HEAD
      
+=======
+>>>>>>> upstream/master
   }
 }
 
@@ -55,9 +58,15 @@ class Witch extends Monster
  {
   System.out.println("overRide in Witch\n");
  }
+<<<<<<< HEAD
  
  
 
+=======
+
+ 
+
+>>>>>>> upstream/master
  public String toString()
  {
   return "Witches are the best!!!!!\n";
